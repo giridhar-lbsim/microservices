@@ -13,8 +13,10 @@ public class LimitsConfigurationController {
 	@Autowired
 	private Configuration configuration;
 
+
 	@GetMapping("/limits")
 	public LimitConfiguration retrieveLimitsConfiguration() {
+		System.out.println("configuration....");
 		return new LimitConfiguration(configuration.getMaximum(),configuration.getMinimum());
 		
 	}
