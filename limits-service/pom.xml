@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>limits-service</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot makes easy to develop microservices and its easy to learn.</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -34,6 +34,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 	</dependencies>
 
