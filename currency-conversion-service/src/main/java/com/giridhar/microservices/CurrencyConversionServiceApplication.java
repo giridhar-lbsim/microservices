@@ -1,15 +1,17 @@
-package com.giridhar.microservices.limitsservice;
+package com.giridhar.microservices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
+@EnableFeignClients("com.giridhar.microservices")
 @EnableDiscoveryClient
-public class LimitsServiceApplication {
+public class CurrencyConversionServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LimitsServiceApplication.class, args);
+		SpringApplication.run(CurrencyConversionServiceApplication.class, args);
 	}
 
 }
